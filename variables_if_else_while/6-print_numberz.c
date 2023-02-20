@@ -1,17 +1,16 @@
 #include <stdio.h>
 /**
- * main - Prints numbers from 0 to 9.
+ * main - Prints numbers between 0 to 9.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char digit = '0';
+	int n;
 
-	while (digit <= '9')
+	for (n = 0; n < 10; n++)
 	{
-		putchar(digit);
-		digit++;
+		putchar(n + '0');
 	}
 	putchar('\n');
 	return (0);
