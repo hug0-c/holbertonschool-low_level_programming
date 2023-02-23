@@ -24,10 +24,6 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else if (n == 100)
-		{
-			printf("FizzBuzz");
-		}
 		else
 		{
 			printf("%d ", n);
