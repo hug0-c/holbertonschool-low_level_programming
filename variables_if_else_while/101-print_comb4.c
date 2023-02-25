@@ -6,34 +6,28 @@
  */
 int main(void)
 {
-		int first_digit, second_digit, third_digit;
+	int first, second, third;
 
-		for (first_digit = 0; first_digit < 8; first_digit++)
-		{	
-				for (second_digit = 0; second_digit < 9; second_digit++)
-				{
-						for (third_digit = 0; third_digit < 10; third_digit++)
-						{
-								if(second_digit == 0)
-								{
-										second_digit = first_digit + 1;
-								}
-								if (third_digit ==0)
-								{
-										third_digit = second_digit + 1;
-								}
-								putchar(first_digit + '0');
-								putchar(second_digit + '0');
-								putchar(third_digit + '0');
-								if (first_digit == 7)
-								{
-										break;
-								}
-								putchar(',');
-								putchar(' ');
-						}
-				}
+	for (first = 0; first < 8; first++)
+	{
+		for (second = 0; second < 9; second++)
+		{
+			for (third = 0; third < 10; third++)
+			{
+				if (second == 0)
+					second = first + 1;
+				if (third == 0)
+					third = second + 1;
+				putchar(first + '0');
+				putchar(second + '0');
+				putchar(third + '0');
+				if (first == 7)
+					break;
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		putchar('\n');
-		return (0);
+	}
+	putchar('\n');
+	return (0);
 }
