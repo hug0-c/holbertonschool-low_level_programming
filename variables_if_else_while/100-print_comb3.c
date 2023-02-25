@@ -6,26 +6,26 @@
  */
 int main(void)
 {
-		int first_digit, second_digit;
+	int x, y;
 
-		for (first_digit = 0; first_digit < 9; first_digit++)
-		{	
-				for (second_digit = 0; second_digit < 10; second_digit++)
-				{
-						if(second_digit == 0)
-						{
-								second_digit = first_digit + 1;
-						}
-						putchar(first_digit + '0');
-						putchar(second_digit + '0');
-						if (first_digit == 8)
-						{
-								break;
-						}
-						putchar(',');
-						putchar(' ');
-				}
+	for (x = 0; x < 9; x++)
+	{
+		for (y = 0; y < 10; y++)
+		{
+			if (y == 0)
+			{
+				y = x + 1;
+			}
+			putchar(x + '0');
+			putchar(y + '0');
+			if (x == 8)
+			{
+				break;
+			}
+			putchar(',');
+			putchar(' ');
 		}
-		putchar('\n');
-		return (0);
+	}
+	putchar('\n');
+	return (0);
 }
